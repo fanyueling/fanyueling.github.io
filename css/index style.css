@@ -1,0 +1,47 @@
+
+div#title {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 588px;
+}
+div#title h1 {
+   font-size: 90pt;
+}
+
+div.data {
+	position: absolute;
+    top: 25%;
+    left: 42%;
+	color: gray;
+	width: 120px;	
+	font-size: 12pt;
+}
+div.navi{
+	position: absolute;
+	text-align: right;
+    top: 50%;
+    right: 20%;
+	color: gray;
+	width: 150px;	
+	
+}
+div.navi p{
+	color: 	#1E90FF;
+	font-size: 15pt;
+}
+div.navi a:link{
+	color: black;
+	text-decoration-line: none;
+	
+}
+div.navi a:hover{
+	color: 	#1E90FF;
+	font-weight: bold;
+	text-decoration-line: 2pt;
+	text-decoration-color: black;
+}
+div.navi a:active{
+	color: 	#1E90FF;
+	text-decoration-color: black;
+}
