@@ -5,37 +5,100 @@
 	<meta charset="utf-8">
 	<title>WORKS</title>
 	<link rel="stylesheet" type="text/css" href="./css/works style.css">
-	
+	<script src="./js/p5.js"></script>>
+	<script src="./js/work.js"></script>
+	<script type="text/javascript">
+      window.onload = function(){
+      document.getElementById("show").onclick = function(){
+      document.getElementById("hide").style.display = "block";
+}
+
+ }
+
+</script>
 </head>
-<body>
-	<h1 style="font-weight: bold;">WORKS</h1>
-	<nav>
-	    <ul type="none">
-		    <li>
-				<p>Programmer's robot</p>
-				<p>程序员和它的机器人</p>
+<body style="background-color: rgb(170,222,247);height: 100%;" >
+	<div id="title">
+		<h1 style="left: 35px;"><a href="./index.html">HOME</a></h1>
+		<h1 style="left: 48%;">WORKS</h1>
+	
+	</div>
+	<div class="menu"></div>
+	<nav id="left">
+		<ul type="none">
+			<li >
+				<a href="./WORK1.html" style="color: black;">
+					<p>
+						The Robot
+						<br>
+						机器人
+					</p>
+				</a>
+			</li>
+			
+			<li>
+				<a href="./WORK2.html" >
+					<p> 
+						AR Science Map
+						<br>
+						AR科普图
+					</p>
+				</a>
 			</li>
 			<li>
-				<p>Programmer's robot</p>
-				<p>交互科普图-紫金山AR蝴蝶与植被分布</p>
+				<a href="./WORK3.html">
+					<p>
+						Campus VIS
+						<br>
+						校园VIS
+					</p>
+				</a>
 			</li>
 			<li>
-				<p>Campus VIS</p>
-				<p>校园VIS系统</p>
-			</li>
-			<li>
-				<p>Design expression</p>
-				<p>综合设计表达</p>
+				<a href="./WORK4.html">
+					<p>
+						Campus trash can
+						<br>
+						校园垃圾桶
+					</p>
+				</a>
 			</li>
 		</nav>		
 	</ul>
-
-	<div class="top">
-	<a href="./ABOUT ME.html"><P>ABOUT ME</P></a>
-	<a href="./WORKS"><P>WORKS</P></a>
-	<a href="./CONTECT ME"><P>CONTECT ME</P></a>
-	</div>
 	
+	<div class="scroll">
+		<h3>The Robot 机器人</h3>
+		<div class="work-pictures">
+			<p>Basic Info
+				<br>Tool：processsing
+				<br>Team member:1
+				<br>Interaction description:
+				
+				<br>Robot A controls the robot B by typing on the keyboard. The antennas of B receive radio waves while flickering to generate rolling signal waves. The abdomen generates random color patches with a trigonometric function as the trajectory. Move the mouse to B ’s head, and the B robot will “tremble”; move the mouse to B ’s abdomen, and the abdomen screen will change to “I LOVE PROCESSING”.</p>
+				<img src="./pictures/work1/robot1.png">
+				<img src="./pictures/work1/robot2.png">
+				<br>
+				<br>
+				<br>
+				<p> Some code.  </p>
+				<img src="./pictures/work1/processing1.jpg" >
+				<img src="./pictures/work1/processing2.jpg" >
+				<img src="./pictures/work1/processing3.jpg" >
+				
+			</div>
+			
+		</div>
+		<div class="menu-top">
+			<div class="menu-top-line">
+				<div class="menu-top-linetop"></div>
+				<div class="menu-top-linebottom"></div>
+			</div> 			
+		</div>
 
-</body>
-</html>
+		<input type="button" id="show" value="显示div"/>
+		<div id="hide">div</div>
+		
+
+
+	</body>
+	</html>
