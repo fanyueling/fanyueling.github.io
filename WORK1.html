@@ -5,29 +5,30 @@
 	<meta charset="utf-8">
 	<title>WORKS</title>
 	<link rel="stylesheet" type="text/css" href="./css/works style.css">
-	<script src="./js/p5.js"></script>>
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+	<script src="./js/p5.js"></script>
 	<script src="./js/work.js"></script>
 	<script type="text/javascript">
-      window.onload = function(){
-      document.getElementById("show").onclick = function(){
-      document.getElementById("hide").style.display = "block";
-}
-
- }
-
+      function show(){
+       	var hidepage=document.getElementById("hidepage");
+       	if (hidepage.style.display=="") {
+       	    hidepage.style.display="block";	
+       	}else{
+       		 hidepage.style.display="";	
+       	}
+    }
 </script>
 </head>
 <body style="background-color: rgb(170,222,247);height: 100%;" >
 	<div id="title">
 		<h1 style="left: 35px;"><a href="./index.html">HOME</a></h1>
-		<h1 style="left: 48%;">WORKS</h1>
-	
+		<h1 style="left: 45%;"><a href="./work1.html">WORKS</a></h1>
+		
 	</div>
-	<div class="menu"></div>
 	<nav id="left">
 		<ul type="none">
-			<li >
-				<a href="./WORK1.html" style="color: black;">
+			<li>
+				<a href="./WORK1.html"  style="color: black;">
 					<p>
 						The Robot
 						<br>
@@ -35,7 +36,7 @@
 					</p>
 				</a>
 			</li>
-			
+
 			<li>
 				<a href="./WORK2.html" >
 					<p> 
@@ -57,14 +58,14 @@
 			<li>
 				<a href="./WORK4.html">
 					<p>
-						Campus trash can
-						<br>
-						校园垃圾桶
+					Smart trash bag
+					<br>
+					智能垃圾袋
 					</p>
 				</a>
 			</li>
-		</nav>		
-	</ul>
+	    </ul>
+	</nav>		
 	
 	<div class="scroll">
 		<h3>The Robot 机器人</h3>
@@ -72,33 +73,50 @@
 			<p>Basic Info
 				<br>Tool：processsing
 				<br>Team member:1
-				<br>Interaction description:
-				
-				<br>Robot A controls the robot B by typing on the keyboard. The antennas of B receive radio waves while flickering to generate rolling signal waves. The abdomen generates random color patches with a trigonometric function as the trajectory. Move the mouse to B ’s head, and the B robot will “tremble”; move the mouse to B ’s abdomen, and the abdomen screen will change to “I LOVE PROCESSING”.</p>
+			</p>
+			<p>
+				Interaction description:		
+				<br>
+			    Robot A controls the robot B by typing on the keyboard. The antennas of B receive radio waves while flickering to generate rolling signal waves. The abdomen generates random color patches with a trigonometric function as the trajectory. Move the mouse to B ’s head, and the B robot will “tremble”; move the mouse to B ’s abdomen, and the abdomen screen will change to “I LOVE PROCESSING”.</p>
 				<img src="./pictures/work1/robot1.png">
+				<p></p>
 				<img src="./pictures/work1/robot2.png">
 				<br>
 				<br>
 				<br>
-				<p> Some code.  </p>
+				<h3> Some code </h3>
 				<img src="./pictures/work1/processing1.jpg" >
 				<img src="./pictures/work1/processing2.jpg" >
-				<img src="./pictures/work1/processing3.jpg" >
-				
-			</div>
-			
-		</div>
-		<div class="menu-top">
-			<div class="menu-top-line">
-				<div class="menu-top-linetop"></div>
-				<div class="menu-top-linebottom"></div>
-			</div> 			
+				<img src="./pictures/work1/processing3.jpg" >					
+				<br>
+				<br>
+				<br>
+
+				<video preload="auto" controls autoplay loop width="530" height="400" src="./movie/robot.mp4"></video>
+			</div>	
 		</div>
 
-		<input type="button" id="show" value="显示div"/>
-		<div id="hide">div</div>
+	    <button type="button" onclick="show()" id="show" style="position: absolute;left: 94%">   
+		<div class="menu-top">
+				<div class="menu-top-linetop"></div>
+				<div class="menu-top-linebottom"></div> 	
+		</div>
+		</button>
+		    <div id="hidepage">	
+	    		<button type="button" onclick="show()"  >   	
+			    	<img src="./pictures/hidden.png"  id="hide">
+				</button>
+		        <div id="hide-nav">	
+        			<h3 style="top: 0px;"><a href="./index.html" style="width: 90px;top: 20%;">HOME</a></h3>
+        			<h3 style="top: 100px;"><a href="./ABOUT ME1.html"  style="width: 150px;top: 60%;">ABOUT ME</a></h3>
+        			<h3 style="top: 200px;"><a href="./WORK1.html"  style="width: 110px">WORKS</a></li>
+        			<h3 style="top: 300px;"><a href="./CONTACT ME.html"  target="_blank" style="width: 190px">CONTACT ME</a></h3> 
+		        </div>
+		        <img src="./pictures/fish.png" id="fish">
+
+            </div>
 		
 
 
-	</body>
-	</html>
+		</body>
+		</html>
