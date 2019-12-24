@@ -4,21 +4,16 @@ body{
   font-family: Sans-serif;
   height: 100%;
   background-attachment:fixed;
-
 }
 
 div{
   position: relative;
 }
 
-div.section{
-padding: 10%px 20%px;
-  z-index: 2;
-}
 
 div.section img{
   padding:15% 5%;
-  width: 120px;
+  width: 7%;
   float: left;
   opacity: 0.8;
 
